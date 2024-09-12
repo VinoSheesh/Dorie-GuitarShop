@@ -13,6 +13,7 @@
     box-sizing: border-box;
     border: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: var(--font);
-    min-height: 2000px;
+    
 }
 span {
     color: #fad292;
@@ -30,12 +31,14 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 0.6rem 7%;
-    background-color:rgba(26, 18, 11, 0.9);
+    backdrop-filter: blur(4rem);
     position: fixed;
+    border-bottom: 0.7px solid var(--bg);
     top: 0;
     left: 0;
     right: 0;
     z-index: 10000;
+
 }
 
 .navbar .navbar-logo {
@@ -99,19 +102,15 @@ span {
     position: relative;
 }
 
-.hero::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
 .hero .content {
-    width: 100%;
-    padding: 0.1rem 7%;
+    width: 1180px;
+    height: 600px;
+    padding-top: 10rem;
     justify-content: center;
     text-align: center;
     align-items: center;
+    border-radius: .8rem;
+    backdrop-filter: blur(0.7rem);
 }
 .hero h1 {
     font-size: 6rem;
@@ -151,6 +150,70 @@ span {
     border: #C1A57B solid 1px;
     border-radius: 0.5rem;
 }
+
+.about {
+    height:100%;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+}
+
+.about .content-about {
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Mengatur konten secara vertikal */
+    justify-content: space-between; /* Mengatur konten ke tepi */
+    gap: 2rem; /* Menambahkan jarak antar elemen */
+}
+
+.about .content {
+    flex: 1; /* Mengisi ruang yang tersedia untuk teks */
+    margin-right: auto; /* Menambah jarak ke kiri agar gambar menempel ke kanan */
+    text-align: left;
+    max-width: 50rem;
+    padding-left: 15rem;
+    padding-bottom: 7rem;
+}
+
+.about .content h1 {
+    line-height: 1.2;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.about .content p {
+    margin-bottom: 4rem;
+}
+
+.about .content .cta2{
+    margin-left: 0rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #C1A57B;
+    border: #C1A57B solid 1px;
+    border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+.about .about-image {
+    flex: 0 0 auto; /* Gambar tidak melar */
+    max-width: 50%; /* Membatasi lebar gambar */
+    display: flex;
+    justify-content: flex-end; /* Mendorong gambar ke kanan */
+}
+
+.about .about-image img {
+    width: 100%; /* Gambar memenuhi kontainer */
+    height: 100%; /* Menjaga rasio gambar */
+    border-radius: 0rem 0rem 0rem 30rem; /* Tambahan estetika */
+    object-fit: cover; /* Mengisi ruang kontainer tanpa mengubah rasio */
+}
+
 
 
 #hamburger-menu {
