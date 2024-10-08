@@ -31,7 +31,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 7%;
+  padding: 0.6rem 4%;
   background-color: rgba(1, 1, 1, 0.8);
   backdrop-filter: blur(1rem);
   position: fixed;
@@ -61,7 +61,9 @@ span {
 .navbar-nav ul li {
   display: inline-block;
   position: relative;
+  margin-right: 1rem;
 }
+
 .navbar .navbar-nav li {
   display: inline-block;
   font-size: 1.5rem;
@@ -70,36 +72,31 @@ span {
   font-weight: 510;
 }
 
-.navbar-nav li:
-
 ul li ul.dropdown li {
   display: block;
 }
 
 .dropdown-container {
-  position: relative;
   display: inline-block;
+  position: relative;
 }
 
 .dropdown {
-  position: absolute;
-  top: 100%; /* Muncul di bawah link dropdown */
-  left: 0;
-  background-color: rgba(1, 1, 1, 0.8);
+  display: none;
+  position: absolute;   
   list-style: none;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem;
   margin-top: 0.7rem;
   min-width: 150px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 100;
+  background-color: rgba(1, 1, 1, 0.8);
+  backdrop-filter: blur(1rem);
 }
 
 .dropdown-toggle {
   display: inline-flex;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 0px;
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
@@ -115,16 +112,16 @@ ul li ul.dropdown li {
   display: block;
   text-decoration: none;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   transition: background-color 0.3s ease;
 }
 
 .dropdown li a:hover {
+  background-color: #555; 
 }
 
 .dropdown-container:hover .dropdown {
-  opacity: 1;
-  visibility: visible;
+  display: block; /* Dropdown terlihat */
 }
 
 .navbar-nav li:hover .dropdown {
@@ -469,6 +466,31 @@ ul li ul.dropdown li {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.25);
   }
+
+  .dropdown {
+    position: relative;
+    display: none; 
+    background-color: rgba(1, 1, 1, 0.8);
+    backdrop-filter: blur(1rem);
+    list-style: none;
+    padding: 0.5rem 0.5rem;
+    margin-top: 0.7rem;
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .dropdown-container:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    
+  }
+
+  .navbar-nav li:hover .dropdown {
+    display: block;
+  }
+
 }
 
 /* Mobile Phone */
