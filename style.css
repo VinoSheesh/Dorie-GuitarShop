@@ -413,17 +413,23 @@ ul li ul.dropdown li {
   align-items: center;
   padding: 3rem 0;
   flex-wrap: wrap;
-  background-color: black;
+  background:url(Image/photorealistic-electric-guitar-still-life.jpg) fixed 100%;
+  background-size: cover;
+  background-position:center;
 }
 
 .location-container {
   display: flex;
-  width: 80%;
+  width: fit-content;
   height: fit-content;
+  padding: 3rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  border-radius: 1rem;
+  color: black;
+  background-color: white;
 } 
 
 .location-map {
@@ -454,7 +460,7 @@ ul li ul.dropdown li {
 .location-content h1{
   display: inline-flex;
   align-items: center;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
 }
 
 .location-content p{
@@ -466,7 +472,6 @@ ul li ul.dropdown li {
 }
 
 #dropdown-logo {
-  margin-left: 8px;
   transition: transform 0.3s ease;
 }
 
@@ -551,6 +556,20 @@ ul li ul.dropdown li {
   .navbar-nav li:hover .dropdown {
     display: block;
   }
+
+  .location-container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-radius: 1rem;
+    color: black;
+    background-color: white;
+  } 
 
 }
 
