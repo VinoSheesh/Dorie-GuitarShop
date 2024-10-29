@@ -4,7 +4,7 @@
   --font: #ffff;
   --fontsecond:#231d18;
   --span: #9f8a46;
-  --emas: #FFD700;
+  --emas: #ffc800;
   --white:#f9f4ea;
   --tombol:#383838;
   --silver:#B0B0B0;
@@ -199,21 +199,32 @@ ul li ul.dropdown li {
   gap: 1.125rem;
 }
 .hero .content .cta {
-  padding: 0.85rem 4.3rem;
+  padding: 2rem 5rem;
+  height: 3rem;
+  width: 13rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--fontsecond);
   background-color: var(--emas);
   border-radius: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero .content .cta2 {
-  padding: 0.8rem 2rem;
+  padding: 2rem 5rem;
+  height: 3rem;
+  width: 13rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--emas);
   border:var(--emas) solid 1px;
   border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefit {
@@ -221,6 +232,7 @@ ul li ul.dropdown li {
   height: fit-content;
   background-color: white;
   color: var(--darkgray);
+  padding: 1rem;
 }
 
 .benefit .header {
@@ -236,7 +248,7 @@ ul li ul.dropdown li {
   padding-bottom: 0.5rem;
   border-bottom: var(--silver) 2px solid;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   color: var(--darkgray);
 }
