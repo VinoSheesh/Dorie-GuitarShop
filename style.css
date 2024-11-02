@@ -452,52 +452,87 @@ ul li ul.dropdown li {
 .contact {
   height: 100%;
   padding: 1.5rem 0;
-  
 }
 
 .contact h1 {
   color: var(--darkgray);
   font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
-.contact form {
-  width: 35rem;
-  height: max-content;
+.phone h2 {
+  color: #231d18;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.phone p {
+  color: #231d18;
+  font-size: 1.1rem;
+}
+
+.map {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.contact form #small {
-  height: 2.8rem;
-  width: 80%;
-  border: 1px solid var(--silver);
-  border-radius: 8px ;
-  padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.map h2 {
+  color: #231d18;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
 }
 
-.contact form #big {
-  height: 7rem;
-  width: 80%;
-  border: 1px solid var(--silver);
-  border-radius: 8px ;
-  padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-.contact form #submit {
-  width: 9rem;
-  background-color: var(--emas);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-radius: 8px ;
+.map p {
+  color: #231d18;
   font-size: 1rem;
-  padding:.8rem;
+  max-width: 40ch;
 }
 
+.sosmed {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sosmed h2 {
+  color: #231d18;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.sosmed p {
+  color: #231d18;
+  font-size: 1rem;
+  max-width: 40ch;
+}
+
+#sosmed {
+  margin-right: 8px;
+}
+
+#phone {
+  margin-right: 8px;
+}
+
+#map {
+  margin-right: 8px;
+}
 
 #hamburger-menu {
   display: none;
@@ -520,45 +555,8 @@ ul li ul.dropdown li {
   }
 
   .contact-container {
-    flex-direction: column;
-    height: auto;
-    width: 90%;
-    gap: 2rem;
+    margin: 0 25px;
   }
-
-  .location {
-    width: 100%;
-    height: 15rem; 
-  }
-
-  .location iframe {
-    border-radius: 8px 8px 0 0;
-  }
-
-  .contact {
-    width: 100%;
-    padding: 1.5rem;
-  }
-
-  .contact form {
-    width: 100%;
-    align-items: center;
-  }
-
-  .contact h1{
-    text-align: center;
-  }
-
-  .contact form #small, 
-  .contact form #big {
-    width: 90%;
-  }
-
-  .contact form #submit {
-    width: 50%;
-    text-align: center;
-  }
-}
 
 /* Tablet */
 @media (max-width: 768px) {
@@ -633,23 +631,8 @@ ul li ul.dropdown li {
     padding: 1.5rem;
   }
 
-  .contact form {
-    width: 100%;
-    align-items: center;
-  }
-
   .contact h1{
-    text-align: center;
-  }
-
-  .contact form #small, 
-  .contact form #big {
-    width: 80%;
-  }
-
-  .contact form #submit {
-    width: 40%;
-    text-align: center;
+    text-align: left;
   }
 
 }
@@ -663,7 +646,7 @@ ul li ul.dropdown li {
   .contact-container {
     flex-direction: column;
     height: auto;
-    width: 90%;
+    width: 85%;
     gap: 2rem;
   }
 
@@ -681,22 +664,7 @@ ul li ul.dropdown li {
     padding: 1.5rem;
   }
 
-  .contact form {
-    width: 100%;
-    align-items: center;
-  }
-
   .contact h1{
-    text-align: center;
-  }
-
-  .contact form #small, 
-  .contact form #big {
-    width: 75%;
-  }
-
-  .contact form #submit {
-    width: 35%;
-    text-align: center;
+    text-align:left;
   }
 }
