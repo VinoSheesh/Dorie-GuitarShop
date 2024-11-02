@@ -417,7 +417,7 @@ ul li ul.dropdown li {
 .contact-section {
   width: 100%;
   min-height: 800px;
-  background:url(/Image/photorealistic-electric-guitar-still-life.jpg) fixed;
+  background: url('./Image/photorealistic-electric-guitar-still-life.jpg') fixed;
   background-size: cover;
   background-position: center;
   display: flex;
