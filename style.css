@@ -27,9 +27,7 @@ body {
   margin: 0;
   color: var(--font);
 }
-span {
-  color: transparen;
-}
+
 .navbar {
   width: 100%;
   display: flex;
@@ -188,6 +186,8 @@ ul li ul.dropdown li {
 .hero p {
   margin-top: 1rem;
   margin-bottom: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   font-size: 1.2rem;
   color: var(--font);
@@ -197,6 +197,7 @@ ul li ul.dropdown li {
   justify-content: center;
   gap: 1.125rem;
 }
+
 .hero .content .cta {
   padding: 1rem 1rem;
   height: 3.8rem;
