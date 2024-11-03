@@ -25,7 +25,6 @@
 body {
   width: 100%;
   margin: 0;
-  background: transparent;
   color: var(--font);
 }
 span {
@@ -417,9 +416,11 @@ ul li ul.dropdown li {
 .contact-section {
   width: 100%;
   min-height: 800px;
-  background: url(/Image/photorealistic-electric-guitar-still-life.jpg) fixed;
+  background-image: url(Image/photorealistic-electric-guitar-still-life.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
