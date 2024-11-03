@@ -273,7 +273,7 @@ ul li ul.dropdown li {
   width: 22rem;
   height: 28rem;
   background-color: white;
-  background: url(Image/music-instrument-store.jpg);
+  background: url(Image/benefit_a.webp);
   background-size: cover;
   border-radius: 0.5rem;
 }
@@ -306,7 +306,7 @@ ul li ul.dropdown li {
   width: 22rem;
   height: 28rem;
   background-color: white;
-  background: url(Image/artisan-doing-woodcutting.jpg);
+  background: url(Image/benefit_b.webp);
   background-size: cover;
   background-position: 60%;
   border-radius: 0.5rem;
@@ -340,7 +340,7 @@ ul li ul.dropdown li {
   width: 22rem;
   height: 28rem;
   background-color: white;
-  background: url(Image/3473858a4d7c5acd34a68df760e4dbe5.jpg);
+  background: url(Image/benefit_c.webp);
   background-size: cover;
   border-radius: 0.5rem;
 }
@@ -416,7 +416,7 @@ ul li ul.dropdown li {
 .contact-section {
   width: 100%;
   min-height: 800px;
-  background-image: url(Image/photorealistic-electric-guitar-still-life.jpg);
+  background-image: url(Image/contact_background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -615,7 +615,7 @@ ul li ul.dropdown li {
     flex-direction: column;
     height: auto;
     width: 85%;
-    gap: 2rem;
+    gap: .5rem;
   }
 
   .location {
@@ -648,7 +648,7 @@ ul li ul.dropdown li {
     flex-direction: column;
     height: auto;
     width: 85%;
-    gap: 2rem;
+    gap: .5rem;
   }
 
   .location {
@@ -667,5 +667,6 @@ ul li ul.dropdown li {
 
   .contact h1{
     text-align:left;
+    font-size: 3.3rem;
   }
 }
